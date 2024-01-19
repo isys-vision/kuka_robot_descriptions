@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5)
 
 project(kuka_lbr_iisy_support)
 
-find_package(ament_cmake REQUIRED)
+find_package(catkin REQUIRED)
 find_package(urdf REQUIRED)
 find_package(xacro REQUIRED)
 
@@ -15,4 +15,4 @@ if(BUILD_TESTING)
   add_launch_test(test/test_lbr_iisy.py)
 endif()
 
-ament_package()
+catkin_package()
